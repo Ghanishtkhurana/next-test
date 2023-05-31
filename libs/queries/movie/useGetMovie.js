@@ -1,11 +1,12 @@
 import { useQuery } from "@tanstack/react-query";
+import axios from "axios";
 
 const useGetMovie = () => {
   const allMovies = useQuery({
     queryKey: ["movieAll"],
     queryFn: async () => {
       const res = await axios.get("https://jsonplaceholder.typicode.com/users");
-      console.log("res",res)
+      // console.log("res",res)
       return res.data
     },
   });
