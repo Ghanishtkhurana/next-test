@@ -1,27 +1,28 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import {DiUnitySmall} from "react-icons/di"
 
 const Navbar = () => {
   return (
-    <div className="flex justify-between p-2 mb-2 shadow-2xl">
+    <div className="flex justify-between p-2 shadow-2xl bg-[#1F2937]">
       <Link href={"/"}>
         <div>
-          <Image src={"/logo.png"} alt="logo" height={50} width={50} />
+        <DiUnitySmall className="text-white w-8 h-8 hover:text-deep-purple-400 transition duration-500 hover:scale-125" />
         </div>
       </Link>
-      <div className="flex justify-center gap-6 list-none mr-5 mt-3">
+      <div className="flex justify-center gap-6 list-none mr-5 items-center">
         <Link href={"/home"}>
-          <li>Home</li>
+          <li className="text-white font-bold hover:text-deep-purple-400 transition duration-500 hover:scale-125">Home</li>
         </Link>
         <Link href={"/movie"}>
-          <li>movie</li>
+          <li className="text-white font-bold hover:text-deep-purple-400 transition duration-500 hover:scale-125">movie</li>
         </Link>
         <Link href={"/todo"}>
-          <li>todo</li>
+          <li className="text-white font-bold hover:text-deep-purple-400 transition duration-500 hover:scale-125">todo</li>
         </Link>
         <Link href={"/other"}>
-          <li>other</li>
+          <li className="text-white font-bold hover:text-deep-purple-400 transition duration-500 hover:scale-125">other</li>
         </Link>
       </div>
     </div>

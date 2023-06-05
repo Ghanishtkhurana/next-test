@@ -13,7 +13,7 @@ const page = async () => {
   const data = await getData();
   return (
     <div>
-      <div className="flex justify-around">
+      <div className="flex justify-around flex-wrap gap-3">
         {data.map((el, i) => (
           <Card data={el} />
         ))}
