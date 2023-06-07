@@ -9,17 +9,17 @@ const getData = async () => {
   return res.data.data;
 };
 
-const page = async () => {
+const Page = async () => {
   const data = await getData();
   return (
     <div>
       <div className="flex justify-around flex-wrap gap-3">
         {data.map((el, i) => (
-          <Card data={el} />
+          <Card key={i} data={el} />
         ))}
       </div>
     </div>
   );
 };
 
-export default page;
+export default Page;

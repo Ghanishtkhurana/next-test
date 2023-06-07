@@ -1,8 +1,7 @@
 import ImageBgDiv from '@/components/todo/ImageBgDiv'
 import NestedTab from '@/components/todo/NestedTab'
-import React from 'react'
 
-const page = () => {
+const Page = () => {
   return (
     <div>
       <ImageBgDiv />
@@ -11,4 +10,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Page

@@ -1,7 +1,7 @@
 import { useQuery } from "@tanstack/react-query";
 import axios from "axios";
 
-const useGetMovie = () => {
+const UseGetMovie = () => {
   const allMovies = useQuery({
     queryKey: ["movieAll"],
     queryFn: async () => {
@@ -13,4 +13,4 @@ const useGetMovie = () => {
   return allMovies
 };
 
-export default useGetMovie
+export default UseGetMovie

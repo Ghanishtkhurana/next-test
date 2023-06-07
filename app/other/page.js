@@ -1,5 +1,4 @@
 "use client"
-import React from 'react'
 import useGetMovie from '@/libs/queries/movie/useGetMovie';
 
 // async function getUsers() {
@@ -7,7 +6,7 @@ import useGetMovie from '@/libs/queries/movie/useGetMovie';
 //   return res.data
 // }
 
-const page = () => {
+const Page = () => {
   const {data,isLoading} = useGetMovie()
   console.log("userData",data)
 
@@ -18,4 +17,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Page

@@ -1,7 +1,7 @@
 "use client";
-import { Button } from "@material-tailwind/react";
+import Button from "@material-tailwind/react/components/Button";
 import Image from "next/image";
-import React, { useState } from "react";
+import { useState } from "react";
 
 const NestedTab = () => {
   const [tab, setTab] = useState("gojo");
@@ -9,9 +9,15 @@ const NestedTab = () => {
     <div>
       <div className="h-48 bg-[url(https://i.pinimg.com/564x/f2/32/41/f2324123ed322610368ebc8c8c871b6e.jpg)] bg-contain">
         <div className="flex justify-center items-center pt-2 mb-4 gap-4">
-          <Button onClick={()=>setTab("gojo")} size="sm">gojo</Button>
-          <Button onClick={()=>setTab("luffy")} size="sm">Luffy</Button>
-          <Button onClick={()=>setTab("zoro")} size="sm">zoro</Button>
+          <Button onClick={() => setTab("gojo")} size="sm">
+            gojo
+          </Button>
+          <Button onClick={() => setTab("luffy")} size="sm">
+            Luffy
+          </Button>
+          <Button onClick={() => setTab("zoro")} size="sm">
+            zoro
+          </Button>
         </div>
         {/* content */}
         <div className="flex justify-center items-center">

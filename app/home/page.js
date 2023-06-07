@@ -2,7 +2,7 @@
 import Modal from "@/core/Modal";
 import React, { useState } from "react";
 
-const page = () => {
+const Page = () => {
   const [show, setShow] = useState(false);
   return (
     <div>
@@ -25,4 +25,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;
