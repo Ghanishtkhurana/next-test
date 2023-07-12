@@ -24,6 +24,9 @@ const Navbar = () => {
         <Link href={"/other"}>
           <li className="text-white font-bold hover:text-deep-purple-400 transition duration-500 hover:scale-125">other</li>
         </Link>
+        <Link href={"/spotify"}>
+          <li className="text-white font-bold hover:text-deep-purple-400 transition duration-500 hover:scale-125">spotify</li>
+        </Link>
       </div>
     </div>
   );

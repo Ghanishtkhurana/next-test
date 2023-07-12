@@ -3,6 +3,7 @@ import "./globals.css";
 import { Inter } from "next/font/google";
 import { Providers } from "@/store/Provider";
 import { ReactQuery } from "@/store/ReactQuery";
+import PrivateRoute from "@/store/PrivateRoute";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -18,7 +19,7 @@ export default function RootLayout({ children }) {
         <ReactQuery>
           <Providers>
             <Navbar />
-            {children}
+            <PrivateRoute>{children}</PrivateRoute>
           </Providers>
         </ReactQuery>
       </body>

@@ -4,7 +4,6 @@ const initialState = {
     data : []
 }
 
-console.log("hello")
 const TodoSlice = createSlice({
     name : "todo" ,
     initialState ,
