@@ -28,11 +28,18 @@ const Page = () => {
   console.log(getCookie("cooky"))
 
   return (
-    <div>
+    <div className="flex flex-col justify-center items-center">
+      <div>
+        email = email@gmail.com 
+        password = 12345
+      </div>
       <form
         onSubmit={handleSubmit(onSubmit)}
-        className="bg-purple-200 w-[350px] mt-32 justify-center items-center border-2 border-black flex flex-col pl-20 pr-20 gap-4"
+        className="bg-purple-200 p-2 w-[350px] rounded-xl mt-32 justify-center items-center border-2 border-black flex flex-col pl-20 pr-20 gap-4"
       >
+        <div>
+          Login
+        </div>
         <div className="flex flex-col gap-2">
           <input
             type="text"
@@ -46,7 +53,7 @@ const Page = () => {
             placeholder="password"
             {...register("password")}
           />
-          <button type="submit" className="w-[200px]">
+          <button type="submit" className="bg-lime-700 rounded-2xl text-white w-auto p-2">
             Login
           </button>
         </div>

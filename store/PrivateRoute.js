@@ -4,15 +4,12 @@ import { getCookie } from "cookies-next";
 
 const PrivateRoute = ({ children }) => {
   const path = usePathname();
-  console.log("path", path);
   const cokyname = getCookie("cooky");
   const router = useRouter();
-  console.log(cokyname);
-  if ((path !== "/" || path !== "/other") && cokyname) {
-    console.log("first");
+  if ((path !== "/" || path !== "/login") && cokyname) {
    return children
   }
-  else if(path === "/" || path === "/home" || path == "/other"){
+  else if(path === "/" || path === "/home" || path == "/login"){
     console.log("second");
     return children
     
@@ -20,7 +17,7 @@ const PrivateRoute = ({ children }) => {
   else{
     alert("login first")
     
-    router.push("/other");
+    router.push("/login");
   }
 };
 

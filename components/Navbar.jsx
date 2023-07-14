@@ -21,11 +21,11 @@ const Navbar = () => {
         <Link href={"/todo"}>
           <li className="text-white font-bold hover:text-deep-purple-400 transition duration-500 hover:scale-125">todo</li>
         </Link>
-        <Link href={"/other"}>
-          <li className="text-white font-bold hover:text-deep-purple-400 transition duration-500 hover:scale-125">other</li>
+        <Link href={"/login"}>
+          <li className="text-white font-bold hover:text-deep-purple-400 transition duration-500 hover:scale-125">Login</li>
         </Link>
-        <Link href={"/spotify"}>
-          <li className="text-white font-bold hover:text-deep-purple-400 transition duration-500 hover:scale-125">spotify</li>
+        <Link href={"/react-table"}>
+          <li className="text-white font-bold hover:text-deep-purple-400 transition duration-500 hover:scale-125">React-Table</li>
         </Link>
       </div>
     </div>
